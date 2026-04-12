@@ -14,9 +14,12 @@ header {
     grid-area: header;
 }
 
-nav {
+.sidebar {
     background-color: paleturquoise;
     grid-area: nav;
+
+    display: grid;
+    gap: 50px;
 }
 
 main {
