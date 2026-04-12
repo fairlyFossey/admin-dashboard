@@ -3,23 +3,23 @@
 .container {
     display: grid;
     grid-template-areas: 
-    "header nav"
-    "header main";
+    "nav header"
+    "nav main";
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr 5fr;
 }
 
 header {
-    background-color: lightblue;
+    background-color: palegoldenrod;
     grid-area: header;
 }
 
 nav {
-    background-color: yellow;
+    background-color: paleturquoise;
     grid-area: nav;
 }
 
 main {
-    background-color: gray;
+    background-color: palevioletred;
     grid-area: main;
 }
