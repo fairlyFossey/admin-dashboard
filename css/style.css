@@ -20,6 +20,13 @@ header {
 
     display: grid;
     gap: 50px;
+
+    div:has(>.icon+span) {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: start;
+        gap: 10px;
+    }
 }
 
 main {
