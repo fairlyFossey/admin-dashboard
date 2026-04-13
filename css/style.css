@@ -20,18 +20,28 @@ header {
 
     .search {
         grid-area: upper-left;
+        display: grid;
+        grid-auto-flow: column;
     }
 
     .user-menu {
         grid-area: upper-right;
+        display: grid;
+        grid-auto-flow: column;
     }
 
     .user-greeting {
         grid-area: lower-left;
+        display: grid;
+        grid-template-areas: 
+        "profile-pic greeting"
+        "profile-pic user-name";
     }
 
     .button-group {
         grid-area: lower-right;
+        display: grid;
+        grid-auto-flow: column;
     }
 }
 
