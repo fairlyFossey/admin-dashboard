@@ -18,10 +18,11 @@ header {
     "upper-left upper-right"
     "lower-left lower-right";
 
-    .search {
+    .search-bar {
         grid-area: upper-left;
         display: grid;
         grid-auto-flow: column;
+        grid-template-columns: auto 1fr;
     }
 
     .user-menu {
