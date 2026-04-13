@@ -12,6 +12,27 @@
 header {
     background-color: palegoldenrod;
     grid-area: header;
+
+    display: grid;
+    grid-template-areas: 
+    "upper-left upper-right"
+    "lower-left lower-right";
+
+    .search {
+        grid-area: upper-left;
+    }
+
+    .user-menu {
+        grid-area: upper-right;
+    }
+
+    .user-greeting {
+        grid-area: lower-left;
+    }
+
+    .button-group {
+        grid-area: lower-right;
+    }
 }
 
 .sidebar {
