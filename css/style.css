@@ -44,8 +44,12 @@ header {
 
     .button-group {
         grid-area: lower-right;
+        
         display: grid;
-        grid-auto-flow: column;
+        grid-template-columns: repeat(3, min-content);
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
     }
 }
 
