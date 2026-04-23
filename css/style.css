@@ -1,6 +1,6 @@
 @import "./reset-addon.css";
 
-.container {
+.cntr {
     display: grid;
     grid-template-areas: 
     "nav header"
@@ -74,8 +74,35 @@ main {
     display: grid;
     grid-template-columns: auto min-content;
 
-    .project-container {
+    .cntr {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .card-cntr {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+    
+        .card {
+            border: 1px solid black; /* design placeholder */
+            padding: 1rem;
+            background-color: white;
+            line-height: 1;
+            display: grid;
+            gap: 5px;
+
+            span {
+                font-weight: 700;
+                font-size: 1rem;
+            }
+
+            .card-btn-cntr {
+                display: grid;
+                grid-auto-flow: column;
+                justify-content: end;
+                gap: 20px;
+            }
+
+        }
     }
 }
