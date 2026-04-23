@@ -71,4 +71,11 @@ header {
 main {
     background-color: palevioletred;
     grid-area: main;
+    display: grid;
+    grid-template-columns: auto min-content;
+
+    .project-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
