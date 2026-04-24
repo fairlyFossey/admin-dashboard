@@ -75,15 +75,13 @@ main {
     grid-area: main;
     display: grid;
     grid-template-columns: auto min-content;
-
-    .cntr {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+    padding: 1rem;
+    gap: 1rem;
 
     .card-cntr {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            gap: 1rem;
     
         .card {
             border: 1px solid black; /* design placeholder */
