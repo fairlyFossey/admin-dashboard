@@ -124,4 +124,28 @@ main {
             font-weight: 700;
         }
     }
+
+    .trending-widget {
+        border: 1px solid black; /* design placeholder */
+        padding: 1rem;
+        background-color: white;
+        line-height: 1;
+        font-size: 0.9rem;
+
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1rem;
+
+        .trending-user {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-areas: 
+            "user-icon user-handle"
+            "user-icon user-description";
+
+            .icon {
+                grid-area: user-icon;
+            }
+        }
+    }
 }
