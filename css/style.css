@@ -56,10 +56,12 @@ header {
 }
 
 .sidebar {
-    background-color: paleturquoise;
+    background-color: paleturquoise; /* design placeholder */
     grid-area: nav;
 
     display: grid;
+    align-content: start;
+    padding: 20px;
     gap: 50px;
 
     div:has(>.icon+span),
