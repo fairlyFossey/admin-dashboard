@@ -62,7 +62,8 @@ header {
     display: grid;
     gap: 50px;
 
-    div:has(>.icon+span) {
+    div:has(>.icon+span),
+    div:has(>.icon+h1) {
         display: grid;
         grid-auto-flow: column;
         justify-content: start;
@@ -77,6 +78,12 @@ main {
     grid-template-columns: auto min-content;
     padding: 1rem;
     gap: 1rem;
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
 
     .card-cntr {
             display: grid;
