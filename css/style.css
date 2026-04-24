@@ -75,7 +75,7 @@ main {
     background-color: palevioletred;
     grid-area: main;
     display: grid;
-    grid-template-columns: auto min-content;
+    grid-template-columns: 4fr 1fr;
     padding: 1rem;
     gap: 1rem;
 
@@ -100,7 +100,6 @@ main {
 
             span {
                 font-weight: 700;
-                font-size: 1rem;
             }
 
             .card-btn-cntr {
@@ -110,6 +109,18 @@ main {
                 gap: 20px;
             }
 
+        }
+    }
+
+    .announcements-widget {
+        border: 1px solid black; /* design placeholder */
+        padding: 1rem;
+        background-color: white;
+        line-height: 1;
+        font-size: 0.9rem;
+
+        span {
+            font-weight: 700;
         }
     }
 }
