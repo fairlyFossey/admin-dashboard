@@ -1,8 +1,8 @@
 @import "./reset-addon.css";
 
 :root {
-    --primary-blue: #3FA0EF;
-    --secondary-offwhite: #e2e8f0;
+    --color-primary: #3FA0EF;
+    --color-light-grey: #e2e8f0;
     --rounded-corners-strong: 15px;
     --rounded-corners-subtle: 8px;
 }
@@ -43,7 +43,7 @@ header {
 
         input {
             border-radius: var(--rounded-corners-strong);
-            background-color: var(--secondary-offwhite);
+            background-color: var(--color-light-grey);
             border: none;
         }
     }
@@ -89,14 +89,14 @@ header {
             height: 30px;
             border-radius: var(--rounded-corners-strong);
             border: none;
-            background-color: var(--primary-blue);
+            background-color: var(--color-primary);
             color: white;
         }
     }
 }
 
 .sidebar {
-    background-color: #3FA0EF;
+    background-color: var(--color-primary);
     grid-area: nav;
 
     display: grid;
@@ -129,7 +129,7 @@ header {
 }
 
 main {
-    background-color: var(--secondary-offwhite);
+    background-color: var(--color-light-grey);
     grid-area: main;
     display: grid;
     grid-template-columns: 4fr 1fr;
