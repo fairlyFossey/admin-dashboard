@@ -1,46 +1,75 @@
 @import "./reset-addon.css";
 
+:root {
+    --primary-blue: #3FA0EF;
+    --secondary-offwhite: #E0E0E0;
+}
+
 .cntr {
     display: grid;
     grid-template-areas: 
     "nav header"
     "nav main";
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: min-content 1fr;
     grid-template-columns: 260px 1fr;
     min-height: 100vh;
     min-height: 100dvh;
+
+    .small-text {
+        font-size: .7rem;
+    }
 }
 
 header {
-    background-color: palegoldenrod;
+    background-color: white;
     grid-area: header;
 
     display: grid;
     grid-template-areas: 
     "upper-left upper-right"
     "lower-left lower-right";
+    grid-template-rows: 2fr 3fr;
+    grid-template-columns: 3fr 2fr;
+    padding: 15px 40px;
+    font-weight: 700;
 
     .search-bar {
         grid-area: upper-left;
         display: grid;
-        grid-auto-flow: column;
         grid-template-columns: auto 1fr;
+        gap: 10px;
+
+        input {
+            border-radius: 30px;
+            background-color: var(--secondary-offwhite);
+            border: none;
+        }
     }
 
     .user-menu {
         grid-area: upper-right;
         display: grid;
-        grid-auto-flow: column;
+        grid-template-columns: auto auto 1fr;
+        gap: 25px;
+        justify-self: end;
     }
 
-    .user-greeting {
+    .current-user {
         grid-area: lower-left;
         display: grid;
         grid-template-columns: auto 1fr;
-        grid-template-rows: auto auto;
 
         img {
             grid-row: 1 / 3;
+            margin-right: 10px;
+        }
+
+        .greeting {
+            align-self: end;
+        }
+
+        .greeting + div {
+            font-size: 1.3rem;
         }
     }
 
@@ -49,9 +78,18 @@ header {
         
         display: grid;
         grid-template-columns: repeat(3, min-content);
-        justify-content: center;
+        justify-content: end;
         align-content: center;
         gap: 20px;
+
+        button {
+            width: 80px;
+            height: 30px;
+            border-radius: 30px;
+            border: none;
+            background-color: var(--primary-blue);
+            color: white;
+        }
     }
 }
 
