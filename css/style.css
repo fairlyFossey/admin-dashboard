@@ -2,7 +2,7 @@
 
 :root {
     --primary-blue: #3FA0EF;
-    --secondary-offwhite: #E0E0E0;
+    --secondary-offwhite: #e2e8f0;
     --rounded-corners-strong: 15px;
     --rounded-corners-subtle: 8px;
 }
@@ -129,7 +129,7 @@ header {
 }
 
 main {
-    background-color: palevioletred;
+    background-color: var(--secondary-offwhite);
     grid-area: main;
     display: grid;
     grid-template-columns: 4fr 1fr;
