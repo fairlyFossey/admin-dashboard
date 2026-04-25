@@ -3,6 +3,7 @@
 :root {
     --color-primary: #3FA0EF;
     --color-light-grey: #e2e8f0;
+    --color-accent: #FDD41D;
     --rounded-corners-strong: 15px;
     --rounded-corners-subtle: 8px;
 }
@@ -148,7 +149,7 @@ main {
             gap: 1rem;
     
         .card {
-            border: 1px solid black; /* design placeholder */
+            border-left: 8px solid var(--color-accent);
             border-radius: var(--rounded-corners-subtle);
             padding: 1rem;
             background-color: white;
