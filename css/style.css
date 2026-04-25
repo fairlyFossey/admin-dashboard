@@ -3,6 +3,8 @@
 :root {
     --primary-blue: #3FA0EF;
     --secondary-offwhite: #E0E0E0;
+    --rounded-corners-strong: 15px;
+    --rounded-corners-subtle: 8px;
 }
 
 .cntr {
@@ -40,7 +42,7 @@ header {
         gap: 10px;
 
         input {
-            border-radius: 30px;
+            border-radius: var(--rounded-corners-strong);
             background-color: var(--secondary-offwhite);
             border: none;
         }
@@ -85,7 +87,7 @@ header {
         button {
             width: 80px;
             height: 30px;
-            border-radius: 30px;
+            border-radius: var(--rounded-corners-strong);
             border: none;
             background-color: var(--primary-blue);
             color: white;
@@ -147,6 +149,7 @@ main {
     
         .card {
             border: 1px solid black; /* design placeholder */
+            border-radius: var(--rounded-corners-subtle);
             padding: 1rem;
             background-color: white;
             line-height: 1;
@@ -169,6 +172,7 @@ main {
 
     .announcements-widget {
         border: 1px solid black; /* design placeholder */
+        border-radius: var(--rounded-corners-subtle);
         padding: 1rem;
         background-color: white;
         line-height: 1;
@@ -182,6 +186,7 @@ main {
 
     .trending-widget {
         border: 1px solid black; /* design placeholder */
+        border-radius: var(--rounded-corners-subtle);
         padding: 1rem;
         background-color: white;
         line-height: 1;
