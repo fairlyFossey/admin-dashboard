@@ -16,6 +16,17 @@
     grid-template-rows: min-content 1fr;
     grid-template-columns: auto 1fr;
     height: 100vh;
+
+    .profile-pic {
+        inline-size: 25px;
+        border-radius: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+    
+    .large.profile-pic {
+        inline-size: 50px;
+    }
 }
 
 header {
@@ -26,10 +37,12 @@ header {
     grid-template-areas: 
     "upper-left upper-right"
     "lower-left lower-right";
-    grid-template-rows: 2fr 3fr;
+    grid-template-rows: min-content min-content;
     grid-template-columns: 3fr 2fr;
+    gap: 10px;
     padding: 10px 40px;
     font-weight: 700;
+    line-height: 1;
 
     .search-bar {
         grid-area: upper-left;
@@ -50,6 +63,7 @@ header {
         grid-template-columns: auto auto 1fr;
         gap: 25px;
         justify-self: end;
+        line-height: 1;
     }
 
     .current-user {
@@ -211,7 +225,7 @@ main {
             "user-icon user-handle"
             "user-icon user-description";
 
-            .icon {
+            .profile-pic {
                 grid-area: user-icon;
             }
         }
