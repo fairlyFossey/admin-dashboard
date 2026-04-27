@@ -16,10 +16,6 @@
     grid-template-rows: min-content 1fr;
     grid-template-columns: auto 1fr;
     height: 100vh;
-
-    .small-text {
-        font-size: .7rem;
-    }
 }
 
 header {
@@ -68,6 +64,7 @@ header {
 
         .greeting {
             align-self: end;
+            font-size: 0.7rem;
         }
 
         .greeting + div {
