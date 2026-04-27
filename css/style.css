@@ -116,7 +116,7 @@ header {
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 30px;
-    gap: 75px; 
+    gap: 60px; 
 
     .sidebar-subsection {
         display: grid;
