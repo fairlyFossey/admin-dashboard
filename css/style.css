@@ -184,7 +184,7 @@ main {
 
     .widget-cntr {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: min-content min-content;
         gap: 15px;
 
         >div {
@@ -221,12 +221,24 @@ main {
         .trending-user {
             display: grid;
             grid-template-columns: auto 1fr;
+            grid-template-rows: min-content min-content;
             grid-template-areas: 
             "user-icon user-handle"
             "user-icon user-description";
+            column-gap: 10px;
 
             .profile-pic {
                 grid-area: user-icon;
+                inline-size: 30px;
+            }
+
+            .full-name {
+                font-weight: 500;
+            }
+
+            .occupation {
+                color: gray;
+                font-size: 0.8rem;
             }
         }
     }
